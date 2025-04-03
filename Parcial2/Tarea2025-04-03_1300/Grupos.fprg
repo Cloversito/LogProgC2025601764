@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Grupos"/>
+        <attribute name="authors" value="clover"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 06:40:57 p. m."/>
+        <attribute name="created" value="Y2xvdmVyO0RFU0tUT1AtVjI2TlA0VjsyMDI1LTA0LTAyOzA1OjU5OjQ5IHAuIG0uOzMxOTk="/>
+        <attribute name="edited" value="Y2xvdmVyO0RFU0tUT1AtVjI2TlA0VjsyMDI1LTA0LTAyOzA2OjQwOjU3IHAuIG0uOzI7MzI5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nom" type="String" array="False" size=""/>
+            <declare name="Sex" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese la inicial del Alumno&quot;" newline="True"/>
+            <input variable="Nom"/>
+            <output expression="&quot;&#191;Es Hombre o Mujer?&quot;" newline="True"/>
+            <input variable="Sex"/>
+            <if expression="Sex==&quot;Hombre&quot;||Sex==&quot;Mujer&quot;">
+                <then>
+                    <if expression="Sex==&quot;Mujer&quot;&amp;&amp;Nom&gt;=&quot;A&quot;&amp;&amp;Nom&lt;=&quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Pertenece al grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Sex==&quot;Mujer&quot;&amp;&amp;Nom&gt;=&quot;N&quot;&amp;&amp;Nom&lt;=&quot;Z&quot;">
+                                <then>
+                                    <output expression="&quot;Pertenece al grupo B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Sex==&quot;Hombre&quot;&amp;&amp;Nom&gt;=&quot;A&quot;&amp;&amp;Nom&lt;=&quot;M&quot;">
+                                        <then>
+                                            <output expression="&quot;Pertenece al grupo B&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Sex==&quot;Hombre&quot;&amp;&amp;Nom&gt;=&quot;N&quot;&amp;&amp;Nom&lt;=&quot;Z&quot;">
+                                                <then>
+                                                    <output expression="&quot;Pertenece al grupo A&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;El sexo no es valido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
