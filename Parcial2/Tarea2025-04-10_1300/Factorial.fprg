@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="clover"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:39:28 p. m."/>
+        <attribute name="created" value="Y2xvdmVyO0RFU0tUT1AtVjI2TlA0VjsyMDI1LTA0LTA4OzA1OjE1OjM2IHAuIG0uOzMxOTM="/>
+        <attribute name="edited" value="Y2xvdmVyO0RFU0tUT1AtVjI2TlA0VjsyMDI1LTA0LTA4OzA1OjM5OjI4IHAuIG0uOzE7MzMwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NI" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="R" type="Integer" array="False" size=""/>
+            <declare name="RN" type="Integer" array="False" size=""/>
+            <assign variable="RN" expression="1"/>
+            <output expression="&quot;Ingresa el numero al cual le quieres sacar su factorial&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="NI" expression="N"/>
+            <while expression="N&gt;1">
+                <assign variable="R" expression="N"/>
+                <assign variable="RN" expression="RN*R"/>
+                <assign variable="N" expression="N-1"/>
+            </while>
+            <output expression="&quot;La factorial &quot;&amp;NI&amp;&quot; es igual a &quot;&amp;RN" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
